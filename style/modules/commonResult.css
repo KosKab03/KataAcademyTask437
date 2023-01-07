@@ -1,0 +1,34 @@
+.result__git-profile {
+  display: flex;
+  flex-direction: column;
+
+  width: 500px;
+
+  margin: 0 auto;
+  margin-top: 45px;
+}
+
+.git-profile {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 8px 16px;
+
+  border: 1px solid #000000;
+  background-color: #e27beb;
+
+  font-size: 24px;
+  line-height: 25px;
+}
+
+.git-profile:hover {
+  background-color: #f9b4ff;
+}
+
+.git-profile__link{
+  width: 90%;
+}
+
+.git-profile__delete-btn {
+  z-index: 5;
+}
