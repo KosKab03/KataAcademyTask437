@@ -1,11 +1,11 @@
 const URL = 'https://api.github.com/search/repositories?q';
 
-function callToGetRepos(value) {
-  return new Promise((resolve, reject) => {
-    resolve(fetch(`${URL}=${value}`));
-  }).then((repoSArray) => {
-    return repoSArray.json();
-  });
+async function callToGetRepos(value) {
+  const responce = await fetch(`${URL}=${value}`);
+  
+  const movies = await responce.json();
+
+  return movies;
 }
 
 export default callToGetRepos;
